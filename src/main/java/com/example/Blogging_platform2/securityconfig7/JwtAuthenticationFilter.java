@@ -1,5 +1,4 @@
 package com.example.Blogging_platform2.securityconfig7;
-
 import com.example.Blogging_platform2.service.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
