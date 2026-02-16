@@ -1,5 +1,4 @@
 package com.example.Blogging_platform2.service;
-
 import com.example.Blogging_platform2.model.User;
 import com.example.Blogging_platform2.dao.UserDao;
 import org.springframework.cache.annotation.Cacheable;
