@@ -1,0 +1,23 @@
+input CreateCommentRequest {
+    postId: ID!
+    userId: ID!
+    content: String!
+}
+
+type Comment {
+    id: ID
+    content: String
+    createdAt: String
+    post: Post
+    user: User
+}
+
+extend type Query {
+    getCommentsByPost(postId: ID!): [Comment]
+    getComment(id: ID!): Comment
+}
+
+extend type Mutation {
+    createComment(request: CreateCommentRequest!): Comment
+    deleteComment(id: ID!): Boolean
+}

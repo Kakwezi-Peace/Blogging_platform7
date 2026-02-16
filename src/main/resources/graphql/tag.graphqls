@@ -1,0 +1,16 @@
+
+type Tag {
+    id: ID
+    name: String
+
+}
+
+extend type Query {
+    getAllTags: [Tag]
+    getTag(tagId: ID!): Tag
+}
+
+extend type Mutation {
+    createTag(name: String!): Tag
+    deleteTag(tagId: ID!): Boolean
+}

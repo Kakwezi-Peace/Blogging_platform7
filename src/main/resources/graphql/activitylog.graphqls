@@ -1,0 +1,18 @@
+type ActivityLog {
+    id: ID
+    action: String
+    targetId: ID
+    details: String
+    timestamp: String
+    user: User
+}
+
+extend type Query {
+    getAllLogs: [ActivityLog]
+    getLog(id: ID!): ActivityLog
+}
+
+extend type Mutation {
+    createLog(userId: ID!, action: String!, targetId: ID, details: String): ActivityLog
+    deleteLog(id: ID!): Boolean
+}

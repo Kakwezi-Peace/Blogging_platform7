@@ -1,0 +1,16 @@
+type PostView {
+    id: ID
+    viewedAt: String
+    post: Post
+    user: User
+}
+
+extend type Query {
+    getViewsByPost(postId: ID!): [PostView]
+    getView(id: ID!): PostView
+}
+
+extend type Mutation {
+    createView(postId: ID!, userId: ID!): PostView
+    deleteView(id: ID!): Boolean
+}

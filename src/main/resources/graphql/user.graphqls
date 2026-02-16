@@ -1,0 +1,24 @@
+
+# --- User definitions ---
+input CreateUserRequest {
+    username: String!
+    email: String!
+    password: String!
+}
+
+type User {
+    id: ID
+    username: String
+    email: String
+    role: String
+    posts: [Post]
+}
+
+type Query {
+    getAllUsers: [User]
+    getUser(id: ID!): User
+}
+
+type Mutation {
+    createUser(input: CreateUserRequest!): User
+}
