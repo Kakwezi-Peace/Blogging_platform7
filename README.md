@@ -14,7 +14,6 @@ Search posts by title or content
 
 GraphQL queries/mutations for flexible data access
 
-
 ## CORS vs. CSRF
 
 ### CORS (Cross-Origin Resource Sharing)
@@ -67,7 +66,6 @@ GraphQL Schema: Queries and mutations for all entities
 
 
  ## Running the Project
-
 
 bash
 git clone https://github.com/your-username/blogging-platform.git
