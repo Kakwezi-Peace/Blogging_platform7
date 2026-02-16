@@ -1,5 +1,4 @@
 package com.example.Blogging_platform2.service;
-
 import com.example.Blogging_platform2.dao.UserDao;
 import com.example.Blogging_platform2.model.Role;
 import com.example.Blogging_platform2.model.User;
