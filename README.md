@@ -68,7 +68,6 @@ GraphQL Schema: Queries and mutations for all entities
 
  ## Running the Project
 
-
 bash
 git clone https://github.com/your-username/blogging-platform.git
 cd blogging-platform
