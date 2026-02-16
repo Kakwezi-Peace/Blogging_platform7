@@ -27,6 +27,7 @@ public class SecurityConfig {
         this.customOAuth2UserService = customOAuth2UserService;
     }
 
+
     // Password encoder for secure password storage
     @Bean
     public PasswordEncoder passwordEncoder() {
