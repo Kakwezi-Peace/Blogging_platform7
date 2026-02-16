@@ -10,11 +10,10 @@ import java.util.Date;
 
 @Component
 public class JwtUtil {
-
-    // Token expiry: 1 hour
+    // Token expiry in 1 hour
     private static final long EXPIRATION_TIME = 1000 * 60 * 60;
 
-    // Option 1: Generate a secure random key at runtime
+    // Generate a secure random key at runtime
     private final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
     // Generate token
